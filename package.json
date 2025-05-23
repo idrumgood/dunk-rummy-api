@@ -1,0 +1,25 @@
+{
+    "name": "gin-rummy-api",
+    "description": "Gin Rummy API",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
+        "build": "tsc",
+        "start": "node dist/index.js"
+    },
+    "author": "Bryan Dunk",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@google-cloud/storage": "^7.16.0",
+        "@google/genai": "^1.0.1",
+        "cors": "^2.8.5",
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.12",
+        "nodemon": "^3.1.0",
+        "typescript": "^5.4.5"
+    }
+}
